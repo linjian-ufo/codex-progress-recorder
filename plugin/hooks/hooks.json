@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "SessionStart": [{"matcher": "startup|resume|fork", "hooks": [{"type": "command", "command": "python3 \"${PLUGIN_ROOT}/hooks/record.py\"", "commandWindows": "python \"${PLUGIN_ROOT}\\hooks\\record.py\"", "timeout": 3}]}],
+    "Stop": [{"hooks": [{"type": "command", "command": "python3 \"${PLUGIN_ROOT}/hooks/record.py\"", "commandWindows": "python \"${PLUGIN_ROOT}\\hooks\\record.py\"", "timeout": 3}]}],
+    "SessionEnd": [{"hooks": [{"type": "command", "command": "python3 \"${PLUGIN_ROOT}/hooks/record.py\"", "commandWindows": "python \"${PLUGIN_ROOT}\\hooks\\record.py\"", "timeout": 3}]}]
+  }
+}

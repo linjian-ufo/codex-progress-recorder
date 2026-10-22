@@ -1,0 +1,11 @@
+# Local conversation exports and source notes
+Codex过程记录/
+记录.txt
+example-progress.md
+progress*.md
+
+# Python cache and local settings
+__pycache__/
+*.py[cod]
+.env
+.env.*

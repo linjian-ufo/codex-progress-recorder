@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-progress-recorder",
+  "version": "0.3.0",
+  "description": "Automatically export visible Codex progress and final replies for every local conversation.",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "Codex 过程回复记录器",
+        "shortDescription": "自动记录每个聊天任务的过程和最终回复",
+        "longDescription": "在会话开始、每轮结束及会话关闭时，将可见的过程回复和最终回复导出到本机 Markdown 文件。",
+        "developerName": "Local",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"]
+      }
+    }
+  }
+}
